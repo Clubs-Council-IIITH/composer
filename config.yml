@@ -1,0 +1,8 @@
+interval: 1
+timeout: 30
+services:
+  - name: clubs
+    url: http://clubs/graphql
+
+  - name: events
+    url: http://events/graphql
