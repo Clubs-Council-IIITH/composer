@@ -31,6 +31,9 @@ until [ $((EPOCHSECONDS-STARTTIME)) -gt $TIMEOUT ] || [ "${#healthy[@]}" -eq "${
             [[ $? -eq 0 ]] && healthy+=($i)
         fi
     done
+    
+    # wait before next attempt
+    sleep $INTERVAL
 done
 
 # construct supergraph.yml
