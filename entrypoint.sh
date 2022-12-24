@@ -1,10 +1,6 @@
 #! /bin/bash
 
-# install dependencies
-echo "Installing dependencies..."
-apt update && apt install curl wget -y
-curl -sSL https://rover.apollo.dev/nix/v0.10.0 | sh
-wget -nv https://github.com/mikefarah/yq/releases/download/v4.2.0/yq_linux_amd64.tar.gz -O - | tar xz && mv yq_linux_amd64 /usr/bin/yq
+# add rover to PATH
 export PATH=$HOME/.rover/bin:$PATH
 
 # record healthcheck start time
