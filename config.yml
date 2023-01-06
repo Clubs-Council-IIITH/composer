@@ -9,5 +9,5 @@ services:
   #   url: http://discussion/graphql
   # - name: mailing
   #   url: http://mailing/graphql
-  # - name: users
-  #   url: http://users/graphql
+  - name: users
+    url: http://users/graphql
