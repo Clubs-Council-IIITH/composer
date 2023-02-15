@@ -11,3 +11,5 @@ services:
   #   url: http://mailing/graphql
   - name: users
     url: http://users/graphql
+  - name: interfaces
+    url: http://interfaces/graphql
